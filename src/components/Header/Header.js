@@ -1,7 +1,7 @@
 import React from 'react';
 import style from "./Header.module.scss";
-import logo from "../assets/images/cookchef.png";
-import HeaderMenuXs from "./HeaderMenuXs";
+import logo from "../../assets/images/cookchef.png";
+import HeaderMenuXs from "./components/HeaderMenu/HeaderMenuXs";
 import { useState } from "react";
 
 export default function Header() {

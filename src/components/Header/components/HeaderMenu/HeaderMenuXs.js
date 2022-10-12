@@ -1,3 +1,4 @@
+import React from "react"
 import style from "./HeaderMenuXs.module.scss"
 
 export default function HeaderMenuXs() {
