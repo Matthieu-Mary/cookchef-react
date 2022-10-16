@@ -9,6 +9,7 @@
     position: relative ;
     img {
         width: 130px;
+        cursor: pointer;
     }
     .headerList {
         @include mixin.xs {

@@ -4,16 +4,17 @@ import logo from "../../assets/images/cookchef.png";
 import HeaderMenuXs from "./components/HeaderMenu/HeaderMenuXs";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({setPage}) {
 
   const [showMenu, setShowMenu] = useState(false);
 
   return (
       <header className={ `${style.header} d-flex flex-row align-center` }>  
-        <div className="flex-fill">
+        <div onClick={ () => setPage("homepage") } className="flex-fill">
             <img src={ logo } alt="logo cookchef" />
         </div>
         <ul className={style.headerList}>
+            <button onClick={ () => setPage("admin") } className="mr-5 btn btn-reverse-primary">Ajouter une recette</button>
             <button className="mr-5 btn btn-reverse-primary">
                 <i class="fa-solid fa-heart mr-5"></i>
                 <span>Wishlist</span>

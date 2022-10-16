@@ -8,7 +8,7 @@ import { ApiContext } from './context/ApiContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ApiContext.Provider value='https://restapi.fr/api/recettes'>
+    <ApiContext.Provider value='https://restapi.fr/api/recipes'>
       <App />
     </ApiContext.Provider>
   </React.StrictMode>
