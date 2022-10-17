@@ -7,7 +7,6 @@ export default function Recipe({ recipe  : { _id, liked, title, image }, toggleL
   const BASE_URL_API = useContext(ApiContext)
 
   async function handleClickLike() {
-    console.log("handleClick")
     try {
       const response = await fetch(`${ BASE_URL_API }/${ _id }`, {
           method: 'PATCH',

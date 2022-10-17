@@ -12,7 +12,7 @@
         cursor: pointer;
         z-index: 1;
         &:hover {
-            color: rgb(225, 50, 50);
+            color: var(--red-1);
         }
     }
     i{

@@ -14,8 +14,8 @@ export default function Header({setPage}) {
             <img src={ logo } alt="logo cookchef" />
         </div>
         <ul className={style.headerList}>
-            <button onClick={ () => setPage("admin") } className="mr-5 btn btn-reverse-primary">Ajouter une recette</button>
-            <button className="mr-5 btn btn-reverse-primary">
+            <button onClick={ () => setPage("admin") } className="mr-15 btn btn-primary">Ajouter une recette</button>
+            <button className="mr-15 btn btn-reverse-primary">
                 <i class="fa-solid fa-heart mr-5"></i>
                 <span>Wishlist</span>
             </button>
@@ -26,7 +26,7 @@ export default function Header({setPage}) {
           showMenu && 
           <>
             <div onClick={() => setShowMenu(false)} className="calc"></div>
-            <HeaderMenuXs />
+            <HeaderMenuXs setPage={setPage} />
           </>
         }
     </header>

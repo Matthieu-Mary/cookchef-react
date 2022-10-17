@@ -12,7 +12,7 @@ export function useFetchData(url, page) {
         setIsLoading(true);
         let queries = "";
         if (page) {
-            queries += `?skip=${ (page - 1) * 9 }&limit=9`
+            queries += `?skip=${ (page - 1) * 9 }&limit=9&sort=createdAt:-1`
         } 
         const response = await fetch(url + queries);
         if(response.ok && !cancel) {
